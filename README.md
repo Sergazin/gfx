@@ -18,14 +18,17 @@ cd gfx
 npm i
 npm run build
 npm run configure
-alias gfx="npm --silent --prefix $PWD start"  (For Linux And MacOs)
-node ./dist/main.js (For Windows PowerShell)
+npm start
+
+# Create allas for better experiens (For Linux And MacOs)
+alias gfx="npm --silent --prefix $PWD start"
 ```
 
 ### Try it on remote host
 ```
 ssh root@gfx.sergazin.kz
 Password: 1!Decentrathon
+# Just use
 gfx
 ```
 
