@@ -1,0 +1,40 @@
+{
+  "name": "gfx",
+  "version": "0.0.1",
+  "description": "Green Field Executor",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "nodemon -w src -e \"ts,sh\" -x ./src/test.sh",
+    "build": "tsc",
+    "prepare": "chmod +x ./dist/main.js"
+  },
+  "author": "Arman Sergazin <Arman Sergazin>",
+  "license": "MIT",
+  "dependencies": {
+    "@bnb-chain/greenfield-cosmos-types": "0.4.0-alpha.9",
+    "@cosmjs/proto-signing": "^0.30.1",
+    "@cosmjs/stargate": "^0.30.1",
+    "@cosmjs/tendermint-rpc": "^0.30.1",
+    "@ethereumjs/util": "^8.0.6",
+    "@ethersproject/signing-key": "^5.7.0",
+    "@ethersproject/units": "^5.7.0",
+    "@metamask/eth-sig-util": "^5.1.0",
+    "axios": "^1.4.0",
+    "colors": "^1.4.0",
+    "commander": "^10.0.1",
+    "ethereum-cryptography": "^2.0.0",
+    "ethjs-util": "^0.1.6",
+    "keythereum": "^2.0.0",
+    "long": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/colors": "^1.2.1",
+    "@types/ethjs-util": "^0.1.1",
+    "@types/keythereum": "^1.2.1",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "ttypescript": "^1.5.15",
+    "typescript": "^4.8.4"
+  }
+}
