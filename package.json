@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon -w src -e \"ts,sh\" -x ./src/test.sh",
     "build": "tsc",
-    "prepare": "chmod +x ./dist/main.js"
+    "configure": "chmod +x ./dist/main.js"
   },
   "author": "Arman Sergazin <Arman Sergazin>",
   "license": "MIT",

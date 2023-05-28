@@ -6,6 +6,7 @@
 
 ### Requirements:
 
+- git
 - nodejs (v18.9.0 Tested)
 - npm (8.19.1 Tested)
 
@@ -16,7 +17,7 @@ git clone https://github.com/sergazin/gfx
 cd gfx
 npm i
 npm run build
-npm run prepare
+npm run configure
 alias gfx="$PWD/dist/main.js"
 ```
 
