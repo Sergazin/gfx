@@ -8,7 +8,7 @@ exports.upload = void 0;
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 const axios_1 = __importDefault(require("axios"));
-const config_1 = require("@/config");
+const config_1 = require("../../../config");
 async function upload(endpoint, txnHash, file) {
     const response = await axios_1.default.put(endpoint, file, {
         headers: {

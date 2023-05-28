@@ -8,11 +8,11 @@ exports.getObjectFromBucket = void 0;
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 const fs_1 = __importDefault(require("fs"));
-const get_selected_storage_provider_1 = require("@/rpc/get-selected-storage-provider");
+const get_selected_storage_provider_1 = require("../../rpc/get-selected-storage-provider");
 const utils_1 = require("./utils");
 const axios_1 = __importDefault(require("axios"));
-const config_1 = require("@/config");
-const print_1 = require("@/utils/print");
+const config_1 = require("../../config");
+const print_1 = require("../../utils/print");
 async function getObjectFromBucket(objectUrl) {
     const { bucketName, objectPath } = (0, utils_1.parseObjectUrl)(objectUrl);
     (0, print_1.gfxPrint)(`Downloading ${objectPath} from ${bucketName}... 🔽`);

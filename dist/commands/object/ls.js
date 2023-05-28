@@ -7,11 +7,11 @@ exports.listObjects = void 0;
 // Copyright 2023 Arman Sergazin. All rights reserved.
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
-const get_selected_storage_provider_1 = require("@/rpc/get-selected-storage-provider");
+const get_selected_storage_provider_1 = require("../../rpc/get-selected-storage-provider");
 const utils_1 = require("./utils");
 const axios_1 = __importDefault(require("axios"));
-const config_1 = require("@/config");
-const print_1 = require("@/utils/print");
+const config_1 = require("../../config");
+const print_1 = require("../../utils/print");
 const common_1 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/common");
 async function listObjects(bucketName) {
     const sp = await (0, get_selected_storage_provider_1.getStorageProvider)();

@@ -6,11 +6,11 @@ exports.deleteObjectFromBasket = void 0;
 // license that can be found in the LICENSE file.
 const tx_1 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/tx");
 const utils_1 = require("./utils");
-const config_1 = require("@/config");
+const config_1 = require("../../config");
 const tx_2 = require("@bnb-chain/greenfield-cosmos-types/cosmos/tx/v1beta1/tx");
 const any_1 = require("@bnb-chain/greenfield-cosmos-types/google/protobuf/any");
-const tx_broadcast_1 = require("@/rpc/tx-broadcast");
-const print_1 = require("@/utils/print");
+const tx_broadcast_1 = require("../../rpc/tx-broadcast");
+const print_1 = require("../../utils/print");
 async function deleteObjectFromBasket(objectUrl) {
     const { bucketName, objectPath } = (0, utils_1.parseObjectUrl)(objectUrl);
     (0, print_1.gfxPrint)(`Deleting object "${objectPath}" from "${bucketName}"... ⌛️`);

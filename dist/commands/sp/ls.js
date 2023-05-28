@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.listStorageProviders = void 0;
 const fetch_storage_providers_1 = require("../../rpc/fetch-storage-providers");
-const print_1 = require("@/utils/print");
+const print_1 = require("../../utils/print");
 function formatStorageProvider(sp, idx) {
     const br = "    ";
     const { operatorAddress, endpoint, status, description } = sp;

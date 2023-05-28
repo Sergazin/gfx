@@ -5,7 +5,7 @@ exports.bucket = void 0;
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 const commander_1 = require("commander");
-const format_description_1 = require("@/utils/format-description");
+const format_description_1 = require("../../utils/format-description");
 const create_1 = require("./create");
 const delete_1 = require("./delete");
 const head_1 = require("./head");

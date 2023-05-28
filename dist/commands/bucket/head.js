@@ -4,8 +4,8 @@ exports.bucketHead = void 0;
 // Copyright 2023 Arman Sergazin. All rights reserved.
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
-const print_1 = require("@/utils/print");
-const gate_ways_1 = require("@/rpc/gate-ways");
+const print_1 = require("../../utils/print");
+const gate_ways_1 = require("../../rpc/gate-ways");
 const query_1 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/query");
 const commander_1 = require("commander");
 const common_1 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/common");

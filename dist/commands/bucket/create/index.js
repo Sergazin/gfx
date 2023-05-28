@@ -5,12 +5,12 @@ exports.createBucket = void 0;
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 const commander_1 = require("commander");
-const get_selected_storage_provider_1 = require("@/rpc/get-selected-storage-provider");
-const config_1 = require("@/config");
+const get_selected_storage_provider_1 = require("../../../rpc/get-selected-storage-provider");
+const config_1 = require("../../../config");
 const types_1 = require("./types");
 const tx_1 = require("./tx");
-const print_1 = require("@/utils/print");
-const approval_gateway_1 = require("@/rpc/approval-gateway");
+const print_1 = require("../../../utils/print");
+const approval_gateway_1 = require("../../../rpc/approval-gateway");
 async function createBucket(bucketName, flags) {
     // Step 1: Bucket name validation ===============================================================================
     if (bucketName.length < 3)

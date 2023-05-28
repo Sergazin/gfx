@@ -4,18 +4,19 @@ exports.txBroadcast = void 0;
 // Copyright 2023 Arman Sergazin. All rights reserved.
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
-const gate_ways_1 = require("@/rpc/gate-ways");
+const gate_ways_1 = require("./gate-ways");
 const types_1 = require("./types");
 const commander_1 = require("commander");
-const private_key_to_cosmos_public_key_1 = require("@/utils/cosmos/private-key-to-cosmos-public-key");
+const private_key_to_cosmos_public_key_1 = require("../utils/cosmos/private-key-to-cosmos-public-key");
 const get_auth_info_bytes_1 = require("./get-auth-info-bytes");
 const eth_sig_util_1 = require("@metamask/eth-sig-util");
 const util_1 = require("@ethereumjs/util");
 const tx_1 = require("@bnb-chain/greenfield-cosmos-types/cosmos/tx/v1beta1/tx");
 const tx_simulate_1 = require("./tx-simulate");
-const get_private_key_1 = require("@/utils/get-private-key");
+const get_private_key_1 = require("../utils/get-private-key");
 const get_account_info_1 = require("./get-account-info");
-const print_1 = require("@/utils/print");
+const config_1 = require("../config");
+const print_1 = require("../utils/print");
 async function txBroadcast(broadcastOptions) {
     const gateWays = await (0, gate_ways_1.getGateWays)();
     const { chainId, msg, msgTypes, bodyBytes, key, denom } = broadcastOptions;

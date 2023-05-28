@@ -10,12 +10,12 @@ exports.createBucketTx = void 0;
 const common_1 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/common");
 const tx_1 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/tx");
 const long_1 = __importDefault(require("long"));
-const config_1 = require("@/config");
+const config_1 = require("../../../config");
 const types_1 = require("./types");
 const helpers_1 = require("@bnb-chain/greenfield-cosmos-types/helpers");
 const any_1 = require("@bnb-chain/greenfield-cosmos-types/google/protobuf/any");
 const tx_2 = require("@bnb-chain/greenfield-cosmos-types/cosmos/tx/v1beta1/tx");
-const tx_broadcast_1 = require("@/rpc/tx-broadcast");
+const tx_broadcast_1 = require("../../../rpc/tx-broadcast");
 async function createBucketTx({ msg }) {
     // Message type URL
     const typeUrl = "/greenfield.storage.MsgCreateBucket";

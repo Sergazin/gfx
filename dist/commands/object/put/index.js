@@ -9,11 +9,11 @@ exports.putObjectIntoBasket = void 0;
 // license that can be found in the LICENSE file.
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
-const config_1 = require("@/config");
-const get_selected_storage_provider_1 = require("@/rpc/get-selected-storage-provider");
+const config_1 = require("../../../config");
+const get_selected_storage_provider_1 = require("../../../rpc/get-selected-storage-provider");
 const get_file_hash_1 = require("./get-file-hash");
-const approval_gateway_1 = require("@/rpc/approval-gateway");
-const print_1 = require("@/utils/print");
+const approval_gateway_1 = require("../../../rpc/approval-gateway");
+const print_1 = require("../../../utils/print");
 const create_tx_1 = require("./create-tx");
 const utils_1 = require("../utils");
 const upload_1 = require("./upload");

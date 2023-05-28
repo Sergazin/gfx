@@ -9,11 +9,11 @@ exports.createObjectTx = void 0;
 // license that can be found in the LICENSE file.
 const common_1 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/common");
 const long_1 = __importDefault(require("long"));
-const config_1 = require("@/config");
+const config_1 = require("../../../config");
 const helpers_1 = require("@bnb-chain/greenfield-cosmos-types/helpers");
 const any_1 = require("@bnb-chain/greenfield-cosmos-types/google/protobuf/any");
 const tx_1 = require("@bnb-chain/greenfield-cosmos-types/cosmos/tx/v1beta1/tx");
-const tx_broadcast_1 = require("@/rpc/tx-broadcast");
+const tx_broadcast_1 = require("../../../rpc/tx-broadcast");
 const types_1 = require("./types");
 const tx_2 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/tx");
 async function createObjectTx(msg) {

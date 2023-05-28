@@ -4,12 +4,12 @@ exports.deleteBucket = void 0;
 // Copyright 2023 Arman Sergazin. All rights reserved.
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
-const config_1 = require("@/config");
+const config_1 = require("../../config");
 const tx_1 = require("@bnb-chain/greenfield-cosmos-types/cosmos/tx/v1beta1/tx");
 const any_1 = require("@bnb-chain/greenfield-cosmos-types/google/protobuf/any");
 const tx_2 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/tx");
-const tx_broadcast_1 = require("@/rpc/tx-broadcast");
-const print_1 = require("@/utils/print");
+const tx_broadcast_1 = require("../../rpc/tx-broadcast");
+const print_1 = require("../../utils/print");
 async function deleteBucket(bucketName) {
     // Step 0: Prepare
     if (bucketName.startsWith("gnfd://"))

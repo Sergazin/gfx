@@ -5,7 +5,7 @@
   "main": "src/main.ts",
   "scripts": {
     "dev": "nodemon -w src -e \"ts,sh\" -x ./src/test.sh",
-    "build": "tsc",
+    "build": "ttsc",
     "configure": "chmod +x ./dist/main.js"
   },
   "author": "Arman Sergazin <Arman Sergazin>",

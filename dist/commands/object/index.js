@@ -6,7 +6,7 @@ exports.object = void 0;
 // license that can be found in the LICENSE file.
 const commander_1 = require("commander");
 require("./put");
-const format_description_1 = require("@/utils/format-description");
+const format_description_1 = require("../../utils/format-description");
 const put_1 = require("./put");
 const delete_1 = require("./delete");
 const cancel_1 = require("./cancel");

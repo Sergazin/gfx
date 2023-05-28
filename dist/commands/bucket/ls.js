@@ -7,10 +7,10 @@ exports.formatBucketToString = exports.listBuckets = void 0;
 // Copyright 2023 Arman Sergazin. All rights reserved.
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
-const config_1 = require("@/config");
-const get_selected_storage_provider_1 = require("@/rpc/get-selected-storage-provider");
+const config_1 = require("../../config");
+const get_selected_storage_provider_1 = require("../../rpc/get-selected-storage-provider");
 const axios_1 = __importDefault(require("axios"));
-const print_1 = require("@/utils/print");
+const print_1 = require("../../utils/print");
 const common_1 = require("@bnb-chain/greenfield-cosmos-types/greenfield/storage/common");
 async function listBuckets(flags) {
     const walletAddress = config_1.KEY.address;

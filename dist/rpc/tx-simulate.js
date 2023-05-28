@@ -4,11 +4,11 @@ exports.txSimulate = void 0;
 // Copyright 2023 Arman Sergazin. All rights reserved.
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
-const gate_ways_1 = require("@/rpc/gate-ways");
+const gate_ways_1 = require("./gate-ways");
 const service_1 = require("@bnb-chain/greenfield-cosmos-types/cosmos/tx/v1beta1/service");
 const get_auth_info_bytes_1 = require("./get-auth-info-bytes");
-const make_cosmos_public_key_1 = require("@/utils/cosmos/make-cosmos-public-key");
-const config_1 = require("@/config");
+const make_cosmos_public_key_1 = require("../utils/cosmos/make-cosmos-public-key");
+const config_1 = require("../config");
 const tx_1 = require("@bnb-chain/greenfield-cosmos-types/cosmos/tx/v1beta1/tx");
 const commander_1 = require("commander");
 async function txSimulate(opts) {

@@ -10,8 +10,8 @@ const fs_1 = __importDefault(require("fs"));
 const commander_1 = require("commander");
 const readline_1 = __importDefault(require("readline"));
 const keythereum_1 = __importDefault(require("keythereum"));
-const config_1 = require("@/config");
-const print_1 = require("@/utils/print");
+const config_1 = require("../../config");
+const print_1 = require("../../utils/print");
 const sp = commander_1.program.command("key-store");
 sp.summary("Key Store utility".white.bgBlack)
     .showHelpAfterError(true)

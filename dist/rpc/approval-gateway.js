@@ -8,8 +8,8 @@ exports.approvalGateway = void 0;
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 const axios_1 = __importDefault(require("axios"));
-const config_1 = require("@/config");
-const object_to_hex_string_encode_decode_1 = require("@/utils/object-to-hex-string-encode-decode");
+const config_1 = require("../config");
+const object_to_hex_string_encode_decode_1 = require("../utils/object-to-hex-string-encode-decode");
 const commander_1 = require("commander");
 async function approvalGateway(endpoint, message) {
     const response = await axios_1.default.get(endpoint, {
