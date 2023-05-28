@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon -w src -e \"ts,sh\" -x ./src/test.sh",
     "build": "ttsc",
-    "configure": "chmod +x ./dist/main.js"
+    "configure": "chmod +x ./dist/main.js",
+    "start":"node -r ts-node/register/transpile-only -r tsconfig-paths/register  src/main.ts"
   },
   "author": "Arman Sergazin <Arman Sergazin>",
   "license": "MIT",

@@ -5,7 +5,7 @@
 ---
 
 ### Requirements:
-
+- Linux/Macos ( Recomended )
 - git
 - nodejs (v18.9.0 Tested)
 - npm (8.19.1 Tested)
@@ -18,7 +18,15 @@ cd gfx
 npm i
 npm run build
 npm run configure
-alias gfx="$PWD/dist/main.js"
+alias gfx="npm --silent --prefix $PWD start"  (For Linux And MacOs)
+node ./dist/main.js (For Windows PowerShell)
+```
+
+### Try it on remote host
+```
+ssh root@gfx.sergazin.kz
+Password: 1!Decentrathon
+gfx
 ```
 
 ### Create key

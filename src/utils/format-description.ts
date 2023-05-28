@@ -2,7 +2,6 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 import "colors";
-
 export function formatDescription(...msg: string[]) {
   // format description for better readability
   const pattern = "\n   ";
