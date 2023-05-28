@@ -12,7 +12,7 @@ Special for:
  / // / _// /__/ _//    / / / / , _/ __ |/ / / _  / /_/ /    / 
 /____/___/\\___/___/_/|_/ /_/ /_/|_/_/ |_/_/ /_//_/\\____/_/|_/  
                                                                
-`.magenta +
+`.magenta.bgBlack +
   `
 Author: \x1b[36mArman Sergazin <arman@sergazin.kz>\x1b[0m
 
