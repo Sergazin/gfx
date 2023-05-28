@@ -32,6 +32,13 @@ Password: 1!Decentrathon
 gfx
 ```
 
+### Warning!
+There is some bugs, that i dont have time to fix because of deadline:
+1) Do object put/get operations in gfx folder, or use $PWD/filename (Absolute path)
+2) Get object operation downloads all file to gfx folder
+3) Key wizard have some bugs, so if you want to use your own key.json/password.txt generate it with gnfd-cmd key-store and then move key.json and password.txt files to $HOME/.gfx folder and it should work.
+
+
 ### Create key
 
 `gfx key-store // then follow instruction`
@@ -80,7 +87,7 @@ Transaction Hash: F1E2EAF640494BE3B5060DF12345BE8E0145486B82731E295B14F91D75D1F9
 
 ### Put an object into the bucket
 
-`gfx object put hello.txt gnfd://mybucket/hello.txt`
+`gfx object put $PWD/hello.txt gnfd://mybucket/hello.txt`
 
 ### Download Object
 
